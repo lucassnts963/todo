@@ -37,7 +37,10 @@ export function ListItem({ data, onCheck, onDelete }: Props) {
           <Feather name="check-circle" size={24} color="#4EA8DE" />
         )}
       </TouchableOpacity>
-      <Text style={styles.description} numberOfLines={2}>
+      <Text
+        style={[styles.description, hasChecked ? styles.checked : null]}
+        numberOfLines={2}
+      >
         {description}
       </Text>
       <TouchableOpacity onPress={handleDeleteTask}>

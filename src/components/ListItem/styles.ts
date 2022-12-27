@@ -18,6 +18,11 @@ export const styles = StyleSheet.create({
     maxWidth: 250,
     maxHeight: 48,
     fontSize: 14,
+    fontFamily: "Inter_400Regular",
+  },
+  checked: {
+    color: "#808080",
+    textDecorationLine: "line-through",
   },
   checkbox: {},
   deleteButton: {},
